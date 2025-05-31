@@ -6,6 +6,8 @@ public class File_writer {
 	try {
       		FileWriter writer = new FileWriter(file_Name);
       		writer.write("Writing to a file!");
+		writer.write("Writing a second line");
+
      		writer.close();
       		System.out.println("Successfully wrote to the file.");
     	} catch (IOException e) {
@@ -29,6 +31,6 @@ public class File_writer {
 
   public static void main(String[] args) {
     	write("Messages.txt");
-	write_with_numbers("Numbers");
+	write_with_numbers("Numbers.txt");
   }
 }
